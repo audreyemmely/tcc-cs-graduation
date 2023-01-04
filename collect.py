@@ -108,6 +108,8 @@ def main():
     appended_data = pd.concat(appended_data,ignore_index=True)
     appended_data.to_csv('/Users/audreyvasconcelos/Downloads/analises_smells/all_smells.csv', index=False)
     print(appended_data)
+    
+#falta fazer a consulta por element e commit para adicionar as métricas no df
 
 if __name__ == "__main__":
     main()
