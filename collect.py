@@ -106,7 +106,7 @@ def main():
         appended_data.append(result)
     
     appended_data = pd.concat(appended_data,ignore_index=True)
-    appended_data.to_csv('/Users/audreyvasconcelos/Downloads/analises_smells/all_smells.csv', ignore_index=True)
+    appended_data.to_csv('/Users/audreyvasconcelos/Downloads/analises_smells/all_smells.csv', index=False)
     print(appended_data)
 
 if __name__ == "__main__":
