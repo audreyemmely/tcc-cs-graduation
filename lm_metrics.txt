@@ -1,4 +1,4 @@
-###MÉDIA 
+###MÉDIA 18 metricas com valor > 0
 cC                                                                  0.000000
 cDISP                                                               0.000000
 cINT                                                                0.000000
@@ -41,7 +41,7 @@ additionalProperties.NumberOfThrowStatements                        0.602941
 additionalProperties.NumberOfTryStatementsWithNoCatchAndFinally     0.029412
 additionalProperties.ThrownExceptionTypesCount                      0.147059
 
-###MEDIANA
+###MEDIANA 11 metricas com valor > 0
 cC                                                                  0.00
 cDISP                                                               0.00
 cINT                                                                0.00
