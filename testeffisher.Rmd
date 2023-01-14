@@ -1,0 +1,95 @@
+---
+title: "Teste F-Fisher - General "
+author: "Audrey"
+date: "2023-01-14"
+output:
+  pdf_document: default
+  word_document: default
+  html_document: default
+---
+
+### Lendo lm_smells
+
+```{r}
+lm_smells <- read.csv(file = 'C:\\Users\\audre\\Desktop\\tcc\\general\\all_lm.csv')
+```
+
+### Lendo lem_smells
+
+```{r}
+lmfe_smells <- read.csv(file = 'C:\\Users\\audre\\Desktop\\tcc\\general\\all_lem.csv')
+```
+
+## Teste F-Fisher
+
+```{r}
+var.test(lm_smells$metrics.MethodEffectiveLinesOfCode, lmfe_smells$metrics.MethodEffectiveLinesOfCode, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfFinallyStatements, lmfe_smells$metrics.NumberOfFinallyStatements, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfCatchStatements, lmfe_smells$metrics.NumberOfCatchStatements, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.ExceptionalLOC, lmfe_smells$metrics.ExceptionalLOC, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfDummyExceptionHandlers, lmfe_smells$metrics.NumberOfDummyExceptionHandlers, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfTryStatements, lmfe_smells$metrics.NumberOfTryStatements, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfThrowStatements, lmfe_smells$metrics.NumberOfThrowStatements, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.NumberOfTryStatementsWithNoCatchAndFinally, lmfe_smells$metrics.NumberOfTryStatementsWithNoCatchAndFinally, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.ThrownExceptionTypesCount, lmfe_smells$metrics.ThrownExceptionTypesCount, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.changingClasses, lmfe_smells$metrics.changingClasses, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.changingMethods, lmfe_smells$metrics.changingMethods, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.couplingDispersion, lmfe_smells$metrics.couplingDispersion, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.couplingIntensity, lmfe_smells$metrics.couplingIntensity, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.cyclomaticComplexity, lmfe_smells$metrics.cyclomaticComplexity, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.maxCallChain, lmfe_smells$metrics.maxCallChain, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.maxNesting, lmfe_smells$metrics.maxNesting, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.numberOfAccessedVariables, lmfe_smells$metrics.numberOfAccessedVariables, alternative = "two.sided")
+```
+
+```{r}
+var.test(lm_smells$metrics.parameterCount, lmfe_smells$metrics.parameterCount, alternative = "two.sided")
+```
